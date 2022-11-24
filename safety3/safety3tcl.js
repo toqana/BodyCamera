@@ -104,7 +104,7 @@ cfgObj.fileLogTimeout_mSec = cfgObj.fileLogManage_mSec *3;
 
 cfgObj.reconnect_mSec      = 10000;
 
-cfgObj.wss2ServerDomain   = "AudioClassify.com";  // ottmod YOURDOMAIN.com
+cfgObj.wss2ServerDomain   = "YOURDOMAIN.com";
 cfgObj.wss2ServerPort     = 3003;                 // you can designate a different port for wss to server
 cfgObj.wss2ServerChannel  = "data";
 
