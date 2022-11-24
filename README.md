@@ -136,7 +136,7 @@ The .bashrc script will:
     npm install http -- save
     npm install ip --save
     npm install util --save
-    npm install webocket --save
+    npm install websocket --save
     npm install body-parser --save
 
 (5) Verify NodeJS runs:
