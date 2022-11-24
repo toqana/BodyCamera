@@ -61,11 +61,11 @@ cfgObj.browserShowDebug   = false;
 
 const url                         = require("url");
 
-cfgObj.wss1ServerDomain   = "AudioClassify.com";  // ottmod YOURDOMAIN.com
+cfgObj.wss1ServerDomain   = "YOURDOMAIN.com";
 cfgObj.wss1ServerPort     = 3002;                 // you can designate a different port for wss to client
 cfgObj.wss1ServerChannel  = "control";
 
-cfgObj.wss2ServerDomain   = "AudioClassify.com";  // ottmod YOURDOMAIN.com
+cfgObj.wss2ServerDomain   = "YOURDOMAIN.com";
 cfgObj.wss2ServerPort     = 3003;                 // you can designate a different port for wss to client
 cfgObj.wss2ServerChannel  = "data";
 
