@@ -154,24 +154,6 @@ The .bashrc script will:
 
     pkill -f safety3
 
-#### $HOME/.bashrc
-
-#### $HOME/safety3/safety3tcl.js
-
-#### $HOME/safety3/safety3tclfork.js
-
-#### $HOME/safety3/time_exports.js
-
-#### $HOME/safety3/public/css/safety3.css
-
-#### $HOME/safety3/public/images/favicon32x32.png
-
-#### $HOME/safety3/public/js/safety3-browser.js
-
-#### $HOME/safety3/public/js/md5.min.js
-
-#### $HOME/safety3/public/views/safety3.ntl
-
 ### Server Code
 
 The BodyCamera secure websockets code has beeen developed and verified on an Ubuntu 22 server.
@@ -206,12 +188,6 @@ The BodyCamera secure websockets code has beeen developed and verified on an Ubu
     node safety3wss.js
 
 (8) [PM2](https://pm2.keymetrics.io/docs/usage/quick-start/) is strongly recommended for safety3wss.js process management.
-
-#### $BODYCAMERAHOME/safety3wss.js
-
-#### $BODYCAMERAHOME/time_exports.js
-
-Same file as $HOME/safety3/time_exports.js.
 
 ### Revsion
 
