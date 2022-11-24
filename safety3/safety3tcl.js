@@ -46,6 +46,8 @@ const url                         = require("url");
 const http                        = require("http");
 const WebSocket                   = require("ws");
 
+/* uncomment for sdcard
+
 //
 // sdcard
 //
@@ -53,13 +55,15 @@ const WebSocket                   = require("ws");
 var sdcard = "sdcard-not-defined";
 
 try {
-  sdcard = fs.readlinkSync("../storage/external-1"); // your device may require a different link
+  sdcard = fs.readlinkSync("/data/data/com.termux/files/home/storage/external-1"); // your device may require a different link
   console.log(ts()+"safety3tcl.js sdcard SUCCESS", {sdcard});
 }
 catch (err) {
   console.log(ts()+"safety3tcl.js sdcard ERROR process.exit()", {err});
   process.exit();
 }
+
+*/
 
 //
 // cfgObj
@@ -75,7 +79,7 @@ cfgObj.browserDebug       = false;
 cfgObj.browserShowDebug   = false;
 //cfgObj.browserShowDebug   = true;
 
-cfgObj.sdcard             = sdcard;
+//cfgObj.sdcard             = sdcard; // uncomment for sdcard
 
 //cfgObj.clientVideo       = sdcard + "/safety/video/";
 cfgObj.clientVideo       = process.cwd() + "/video/"; // internal memory
