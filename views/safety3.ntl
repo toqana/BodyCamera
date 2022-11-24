@@ -1,0 +1,74 @@
+<!-- 
+
+SOFTWARE LICENSE, COPYRIGHT, AND RELEASE OF LIABILITY FOR USE OF AUDIO AND VIDEO RECORDING
+
+Copyright 2022 Toqana Consulting, LLC (A Nevada Limited Liability Company)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+and associated documentation files (the "Software"), to deal in the Software without restriction, 
+including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial 
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE 
+AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE, INCLUDING, 
+BUT NOT LIMITED TO, THE ETHICAL AND LAWFUL USE OF AUDIO AND VIDEO RECORDING.
+
+Contact:  BodyCamera@OTTStreamingVideo.net
+
+--><!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Safety</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" sizes="32x32" href="/images/favicon32x32.png"/>
+
+  <link rel="stylesheet" href="/css/safety3.css">
+  <script src="/js/md5.min.js"></script>
+  <script src="/js/safety3-browser.js"></script>
+  
+</head>
+<body>
+  
+  <div id="div_auth">
+    
+    <div id="div_release">Enter Authorization Code:</div>
+    
+    <input type="password" id="auth_value" name="auth_value" value='' /><br><br>
+    
+    <div id="div_release">The user accepts responsibility and liability for the ethical and lawful use of audio and video recording by clicking on the "Request Authorization" button below.</div>
+    
+    <button id="btn_auth_request" onclick="auth_request();">Request Authorization</button>
+    
+    <div>
+      <input type="text" id="div_cfgStr" value='{{cfgStr}}' />
+    </div>
+    
+    <div id="div_debug">Debug<br></div>
+    
+  </div>
+  
+  <div id="div_safe">
+    
+    <input type="hidden" id="div_cfgStr" value='{{cfgStr}}' />
+    
+    <button id="btn_Fullscreen" onclick="doFullscreen()">Blank for Pocket Use</button>
+    
+    <div id="div_debug_safe">Debug Safe<br></div>
+    
+    <div id="div_geolocation"></div>
+    
+    <video id="video"></video>
+    
+  </div>
+  
+</body>
+</html>
