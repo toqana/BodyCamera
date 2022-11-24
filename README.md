@@ -120,7 +120,7 @@ The .bashrc script will:
 
     git clone https://github.com/toqana/BodyCamera.git
 
-(3) Install NodeJS and NPM in Termux:
+(3) Install NodeJS,NPM, it git in Termux:
 
     pkg update          # install package maintainer's version	Y or I
     pkg upgrade
@@ -128,6 +128,8 @@ The .bashrc script will:
     pkg install nodejs
     node -v             # should display v18.7.0 (or higher)
     npm -v              # should display 8.15.0 (or higher)
+    pkg install git
+    git -v              # should display git version 2.38.1 (or higher)
 
 (4) Install NPM packages (will create folder $HOME/safety3/node_modules):
 
