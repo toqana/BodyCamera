@@ -171,7 +171,7 @@ The BodyCamera secure websockets code has beeen developed and verified on an Ubu
 
 (4) Install a SSL certificate using [Letsencrypt certbot](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04). We are only creating two secure websocket servers, not a HTTPS server.
 
-(5) Upload $BODYCAMERAHOME/safety3wss.js and $BODYCAMERAHOME/time_exports.js.
+(5) Upload $BODYCAMERAHOME/safety3wss.js and $BODYCAMERAHOME/time_exports.js. On https://github.com/toqana/BodyCamera, rather than create a separate repository, these two files are located in the safety3 folder.
 
 (6) Install NPM packages:
 
