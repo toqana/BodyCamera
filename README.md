@@ -1,5 +1,3 @@
-## Body Camera Client/Server
-
 ### Summary
 
 The "Body Camera Client/Server" ("BodyCamera") is intended as a starting point for an Android, iOS, or ARM based Linux or Windows IoT device (i.e."Client") based body camera that stores video and audio recordings ("Recordings") locally on the Client and also uploads the Recordings to a remote server ("Server") as soon as a WiFi or cellular connection is available.
