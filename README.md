@@ -118,6 +118,8 @@ The .bashrc script will:
 
 (2) Upload the BodyCamera file structure to the $HOME folder (e.g. /data/data/com.termux/files/home) of Termux on your Android device.
 
+    git clone https://github.com/toqana/BodyCamera.git
+
 (3) Install NodeJS and NPM in Termux:
 
     pkg update          # install package maintainer's version	Y or I
