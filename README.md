@@ -81,7 +81,7 @@ Please email demonstration, support, or custom application requests to <BodyCame
 
 Install and verify Termux on your android device (see Termux download link above).
 
-This software has been developed and verified on a 5G cell phone (TCL 10 5G UW on the Verizon network) running Android version 10 (kernel version 4.19.81-perf+) and an Android tablet (Samsung Galaxy Tab S7) running Android version 12 (kernel version 4.19.113-24856341)
+This software has been developed and verified on a 5G cell phone (TCL 10 5G UW on the Verizon network) running Android version 10 (kernel version 4.19.81-perf+) and a WiFi only Android tablet (Samsung Galaxy Tab S7) running Android version 12 (kernel version 4.19.113-24856341)
 
 The client file structure is based upon NodeJS Express HTTP localhost webserver:
 
