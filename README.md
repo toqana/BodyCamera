@@ -175,7 +175,9 @@ When cloning from GitHub, use the commands below to move the file structure in t
 Per https://wiki.termux.com/wiki/Internal_and_external_storage, in order to see the Termux files in the Android Files app and use the file picker, the following [Android Activity Manager](https://developer.android.com/studio/command-line/adb#shellcommands) commands were executed in Termux:
 
     am start -a android.intent.action.VIEW -d "content://com.android.externalstorage.documents/root/primary"
+
 and
+    
     am start -a android.intent.action.OPEN_DOCUMENT -d /storage/emulated/0 -t '*/*'
 
 The VLC Android app works well to view multiple Recordings sequentially with a single command. However, recent Android versons restrict app memory usage and access to their own memory area (e.g. /data/data/com.termux/files/home).
