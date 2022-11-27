@@ -26,10 +26,17 @@ The default configuration creates Recordings that are webm files of about 10 sec
 Per https://wiki.termux.com/wiki/Internal_and_external_storage, in order to see the Termux files in the Android Files app and use the file picker, the following commands we execured in Termux:
 
     am start -a android.intent.action.VIEW -d "content://com.android.externalstorage.documents/root/primary"
-
 and
-
     am start -a android.intent.action.OPEN_DOCUMENT -d /storage/emulated/0 -t '*/*'
+
+When cloning from GitHub, use the commands below to move the file structure in the BodyCamera folder to the $HOME folder:
+
+    cd $HOME
+    cd BodyCamera
+    cp -rf ./* ..
+    cp .bashrc ..
+    cd $HOME
+    rm -rf ./BodyCamera
 
 ### Client Option 3: ARM IoT Device
 
