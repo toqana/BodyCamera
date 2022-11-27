@@ -18,7 +18,20 @@ Websockets are used for fast bi-directional communications between the Termux an
 
 The default configuration creates Recordings that are webm files of about 10 seconds duration and 3MB size containing 480x640 VP8 video and 48,000 sample/second Opus audio. When using a cell phone connection (e.g. 4G or 5G), the upload data rate needed to upload each new file before the next file is created is about 3 Mbps.
 
-### Client Option 2: ARM IoT Device
+
+### Client Option 2: Android Tablet
+
+[Termux v1.18](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk) was downloaded and [side-loaded](https://www.makeuseof.com/tag/how-to-manually-install-side-load-apps-on-your-android-device/) on a WiFi only Android tablet (Samsung Galaxy Tab S7) running Android version 12 (kernel version 4.19.113-24856341). See also [wiki.termux](https://wiki.termux.com/wiki/Main_Page).
+
+Per https://wiki.termux.com/wiki/Internal_and_external_storage, in order to see the Termux files in the Android Files app and use the file picker, the following commands we execured in Termux:
+
+    am start -a android.intent.action.VIEW -d "content://com.android.externalstorage.documents/root/primary"
+
+and
+
+    am start -a android.intent.action.OPEN_DOCUMENT -d /storage/emulated/0 -t '*/*'
+
+### Client Option 3: ARM IoT Device
 
 The use of NodeJS for Client functions allows for an inexpensive ARM based IoT device with a camera, microphone, GPS, and other peripherals as desired.
 
@@ -193,5 +206,5 @@ The BodyCamera secure websockets code has beeen developed and verified on an Ubu
 
 ### Revsion
 
-2022-11-24_v0
+2022-11-27_v0
 
