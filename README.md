@@ -23,21 +23,6 @@ The default configuration creates Recordings that are webm files of about 10 sec
 
 [Termux v1.18](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_arm64-v8a.apk) was downloaded and [side-loaded](https://www.makeuseof.com/tag/how-to-manually-install-side-load-apps-on-your-android-device/) on a WiFi only Android tablet (Samsung Galaxy Tab S7) running Android version 12 (kernel version 4.19.113-24856341). See also [wiki.termux](https://wiki.termux.com/wiki/Main_Page).
 
-Per https://wiki.termux.com/wiki/Internal_and_external_storage, in order to see the Termux files in the Android Files app and use the file picker, the following commands we execured in Termux:
-
-    am start -a android.intent.action.VIEW -d "content://com.android.externalstorage.documents/root/primary"
-and
-    am start -a android.intent.action.OPEN_DOCUMENT -d /storage/emulated/0 -t '*/*'
-
-When cloning from GitHub, use the commands below to move the file structure in the BodyCamera folder to the $HOME folder:
-
-    cd $HOME
-    cd BodyCamera
-    cp -rf ./* ..
-    cp .bashrc ..
-    cd $HOME
-    rm -rf ./BodyCamera
-
 ### Client Option 3: ARM IoT Device
 
 The use of NodeJS for Client functions allows for an inexpensive ARM based IoT device with a camera, microphone, GPS, and other peripherals as desired.
@@ -138,6 +123,15 @@ The .bashrc script will:
 
     git clone https://github.com/toqana/BodyCamera.git
 
+When cloning from GitHub, use the commands below to move the file structure in the BodyCamera folder to the $HOME folder:
+
+    cd $HOME
+    cd BodyCamera
+    cp -rf ./* ..
+    cp .bashrc ..
+    cd $HOME
+    rm -rf ./BodyCamera
+
 (3) Install NodeJS,NPM, it git in Termux:
 
     pkg update          # install package maintainer's version	Y or I
@@ -175,6 +169,18 @@ The .bashrc script will:
 (8) Kill the app:
 
     pkill -f safety3
+
+### Viewing Android Recordings
+
+Per https://wiki.termux.com/wiki/Internal_and_external_storage, in order to see the Termux files in the Android Files app and use the file picker, the following [Android Activity Manager](https://developer.android.com/studio/command-line/adb#shellcommands) commands were executed in Termux:
+
+    am start -a android.intent.action.VIEW -d "content://com.android.externalstorage.documents/root/primary"
+and
+    am start -a android.intent.action.OPEN_DOCUMENT -d /storage/emulated/0 -t '*/*'
+
+The VLC Android app works well to view multiple Recordings sequentially with a single command. However, recent Android versons restrict app memory usage and access to their own memory area (e.g. /data/data/com.termux/files/home).
+
+Using the Android Files app, a simple solution is to create a Termux folder in the common Downloads folder, copy the multiple files you wish to view from /data/data/com.termux/files/home/safety3/video, and then use VLC to view multiple files from Downloads/Termux.
 
 ### Server Code
 
