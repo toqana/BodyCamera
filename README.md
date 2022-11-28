@@ -61,21 +61,23 @@ Please email demonstration, support, or custom application requests to <BodyCame
 
 ### Custom Application Possibilities
 
-1. Add voice commands or audio classification (e.g. [AudioClassify.com](https://AudioClassify.com)).
+1. Insert GPS location metadata into .webm audio/video file.
 
-2. Add video face recognition, object recognition, or motion detection with [TensorFlow](https://www.tensorflow.org/lite/api_docs/cc) and/or [OpenCV](https://opencv.org/opencv-face-recognition/).
+2. Add voice commands or audio classification (e.g. [AudioClassify.com](https://AudioClassify.com)).
 
-3. Create Android .apk ([Kotelin](https://kotlinlang.org) is recommended).
+3. Add video face recognition, object recognition, or motion detection with [TensorFlow](https://www.tensorflow.org/lite/api_docs/cc) and/or [OpenCV](https://opencv.org/opencv-face-recognition/).
 
-4. Create iOS app.
+4. Create Android .apk ([Kotelin](https://kotlinlang.org) is recommended).
 
-5. Create ARM based IoT product.
+5. Create iOS app.
 
-6. Create C++ compiled app.
+6. Create ARM based IoT product.
 
-7. Transmit real-time streaming audio and video rather than discreet audio/video files.
+7. Create C++ compiled app.
 
-8. Compress and/or encrypt audio/video files in addition to the default configuration of uploading via secure websockets.
+8. Transmit real-time streaming audio and video rather than discreet audio/video files.
+
+9. Compress and/or encrypt audio/video files in addition to the default configuration of uploading via secure websockets.
 
 ### Client Code
 
@@ -221,5 +223,5 @@ The BodyCamera secure websockets code has beeen developed and verified on an Ubu
 
 ### Revsion
 
-2022-11-27_v0
+2022-11-28_v0
 
